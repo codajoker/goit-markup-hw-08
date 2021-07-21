@@ -1,0 +1,98 @@
+.header {
+  border: 1px solid #ececec;
+  padding: 24px 0 25px 0;
+  position: relative;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color $main-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition: color $main-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.site-nav {
+  display: flex;
+  margin-left: 94px;
+}
+.site-nav__link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: $text-headers;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    cursor: pointer;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: transform $main-duration $timing-function, opacity $main-duration $timing-function;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  &--current {
+    color: $accent-color;
+  }
+  &--current::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-contact {
+  display: flex;
+  margin-left: auto;
+  & + & {
+    margin-left: 50px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $text-descr;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+.site-contact__item + .site-contact__item {
+  margin-left: 50px;
+}

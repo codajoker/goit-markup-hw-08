@@ -1,0 +1,31 @@
+.offers__title {
+  margin-bottom: 50px;
+}
+.offers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-list__wrapper {
+  position: relative;
+}
+.offers-list__image {
+  display: block;
+  width: 100%;
+}
+.offers-list__description {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
