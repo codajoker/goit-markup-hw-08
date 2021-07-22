@@ -1,0 +1,107 @@
+.menu-container {
+  display: none;
+  @media screen and(max-width:767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transform: translateX(100%);
+    background-color: #fff;
+    transition: transform $main-duration $timing-function;
+  }
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toogle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: white;
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  color: $text-headers;
+  transition: color $main-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.mobile-contact {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+.mobile-contact__item {
+  margin-bottom: 32px;
+}
+.mobile-contact__tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+.mobile-contact__email {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: $text-descr;
+}
+.mobile-social {
+  display: flex;
+}
+.mobile-social__item {
+  display: flex;
+  align-items: center;
+  & + & {
+    margin-left: 10px;
+  }
+  &:not(:last-child):after {
+    content: '';
+    margin-left: 10px;
+    width: 1px;
+    height: 22px;
+    background-color: $text-descr;
+  }
+}
+.mobile-social__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
