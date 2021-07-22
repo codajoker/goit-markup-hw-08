@@ -691,13 +691,17 @@ img {
   color: #ffffff;
 }
 
-.social {
-  margin-left: 70px;
-}
-
 @media screen and (max-width: 767px) {
   .social {
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-left: 70px;
   }
 }
 
@@ -705,21 +709,38 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .social__title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
 .social-list__link--white {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 
-.subscibe {
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .subscibe {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscibe {
+    margin-left: auto;
+  }
 }
 
 .subscribe__title {
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .form-subscribe {
-  display: flex;
+  display: block;
 }
 
 .form-subscribe__email {
@@ -756,7 +777,15 @@ img {
 }
 
 .form-subscribe__button {
-  margin-left: 12px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscribe__button {
+    margin-left: 12px;
+  }
 }
 
 .button__icon {
