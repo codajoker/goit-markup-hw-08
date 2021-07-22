@@ -1,24 +1,33 @@
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 .clients-list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: -30px;
+  flex-wrap: wrap;
 }
 .clients-list__item {
   margin-left: 30px;
+  @media screen and(max-width:399px) {
+    & + & {
+      margin-bottom: 20px;
+    }
+  }
 }
 .clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-bottom: 15px;
   color: $main-icon-color;
   border: 1px solid $main-icon-color;
   border-radius: 4px;

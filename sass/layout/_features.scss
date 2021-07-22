@@ -2,12 +2,21 @@
   padding-bottom: 0;
 }
 .features-list {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .features-list__item {
-  flex-basis: calc((100% - 90px) / 4);
-  & + & {
-    margin-left: 30px;
+  @media screen and (max-width: 767px) {
+    & + & {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+    & + & {
+      margin-left: 30px;
+    }
   }
 }
 .features-list__decor {
