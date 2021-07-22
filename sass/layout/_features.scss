@@ -1,16 +1,24 @@
 .features {
   padding-bottom: 0;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
 }
 .features-list {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 .features-list__item {
   @media screen and (max-width: 767px) {
-    & + & {
-      margin-bottom: 30px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 4);
