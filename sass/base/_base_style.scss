@@ -45,6 +45,9 @@ body {
   color: $text-headers;
   background-color: $primary-white-color;
 }
+body.modal-open {
+  overflow: hidden;
+}
 section {
   @media screen and (max-width: 1199px) {
     padding: 60px 0;
