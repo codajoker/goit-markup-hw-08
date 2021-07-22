@@ -4,8 +4,10 @@
   position: relative;
 }
 .header__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .nav {
   display: flex;
@@ -38,8 +40,16 @@
   }
 }
 .site-nav {
-  display: flex;
-  margin-left: 94px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 94px;
+  }
 }
 .site-nav__link {
   display: flex;
@@ -78,19 +88,27 @@
   margin-right: 50px;
 }
 .site-contact {
-  display: flex;
-  margin-left: auto;
-  & + & {
-    margin-left: 50px;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-  &__link {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
-    color: $text-descr;
-  }
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    margin-left: auto;
+    & + & {
+      margin-left: 50px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      color: $text-descr;
+    }
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
 }
 .site-contact__item + .site-contact__item {
