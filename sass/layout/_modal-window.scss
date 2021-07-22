@@ -163,8 +163,8 @@
 .checkbox__icon {
   display: inline-block;
   background-image: url(../images/check.svg);
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
 }
 .checkbox__input:checked ~ .checkbox__icon {
   background-image: url(../images/active-check.svg);
@@ -177,9 +177,7 @@
   letter-spacing: 0.03em;
 
   color: $text-descr;
-  @media screen and (max-width: 479px) {
-    display: inline-grid;
-  }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;

@@ -1022,8 +1022,8 @@ img {
 .checkbox__icon {
   display: inline-block;
   background-image: url(../images/check.svg);
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
 }
 
 .checkbox__input:checked ~ .checkbox__icon {
@@ -1037,12 +1037,6 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-@media screen and (max-width: 479px) {
-  .checkbox__label {
-    display: inline-grid;
-  }
 }
 
 @media screen and (min-width: 1200px) {
