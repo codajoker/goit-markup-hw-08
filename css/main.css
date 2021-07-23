@@ -832,6 +832,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 359px) {
+  .form-subscribe__input {
+    width: 320px;
+  }
+}
+
 .form-subscribe__input:focus + .form-subscribe__label,
 .form-subscribe__input:not(:placeholder-shown) + .form-subscribe__label {
   opacity: 0;
@@ -1090,12 +1096,35 @@ img {
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .filters-list {
+    margin-bottom: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filters-list__item {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filters-list__item {
+    margin-bottom: 15px;
+  }
 }
 
 .filters-list__button {
@@ -1127,21 +1156,57 @@ img {
 .work-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list {
+    margin: -15px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list {
+    margin-top: 50px;
+  }
 }
 
 .work-list__item {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
   background: #ffffff;
+  margin-bottom: 30px;
 }
 
-.work-list__item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .work-list__item {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .work-list__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.work-list__item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .work-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+  .work-list__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .work-list__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .work-list__link {
@@ -1159,6 +1224,7 @@ img {
 .work-list__image {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 /* BLUE ICON */
@@ -1177,7 +1243,7 @@ img {
   top: 0%;
   left: 0;
   background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }

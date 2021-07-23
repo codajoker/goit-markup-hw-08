@@ -137,6 +137,9 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: $primary-white-color;
+  @media screen and (max-width: 359px) {
+    width: 320px;
+  }
 }
 
 .form-subscribe__input:focus + .form-subscribe__label,
