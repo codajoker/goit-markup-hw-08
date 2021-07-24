@@ -92,6 +92,9 @@
   color: $primary-white-color;
 
   transition: transform $main-duration $timing-function;
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
 .work-list__link:hover .work-overlay,
 .work-list__link:focus .work-overlay {

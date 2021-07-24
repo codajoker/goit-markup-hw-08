@@ -1278,6 +1278,12 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 479px) {
+  .work-overlay__descr {
+    font-size: 14px;
+  }
+}
+
 .work-list__link:hover .work-overlay,
 .work-list__link:focus .work-overlay {
   transform: translateY(0);
