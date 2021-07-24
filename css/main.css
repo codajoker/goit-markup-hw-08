@@ -70,6 +70,8 @@ body.modal-open {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -534,6 +536,9 @@ img {
 
 @media screen and (max-width: 1199px) {
   .offers {
+    display: none;
+  }
+  .offers-list__image {
     display: none;
   }
 }
