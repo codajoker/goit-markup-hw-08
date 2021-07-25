@@ -47,8 +47,13 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="hamburger__menu" href="./images/sprite.svg#hamburger"></use>
+            <svg
+              width="40"
+              height="40"
+              class="mob-menu-icon"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/sprite.svg#hamburger"></use>
             </svg>
           </button>
         </nav>
@@ -582,7 +587,12 @@
     <!-- ------------MOBILE MENU-------------- -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="menu-toogle js-close-menu">
-        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <svg
+          width="40"
+          height="40"
+          class="mob-menu-icon"
+          aria-label="Переключатель мобильного меню"
+        >
           <use class="" href="./images/sprite.svg#hamburger-close"></use>
         </svg>
       </button>

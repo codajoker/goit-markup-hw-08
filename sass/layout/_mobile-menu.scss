@@ -29,6 +29,12 @@
   height: 40px;
   padding: 0;
   background-color: white;
+  &:hover .mob-menu-icon {
+    fill: $accent-color;
+  }
+}
+.mob-menu-icon {
+  transition: fill $main-duration $timing-function;
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;

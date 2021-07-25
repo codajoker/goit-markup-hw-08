@@ -134,3 +134,19 @@
     margin-left: 50px;
   }
 }
+.hamburger-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: white;
+  &:hover .mob-menu-icon {
+    fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+}
