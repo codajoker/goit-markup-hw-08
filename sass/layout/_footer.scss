@@ -19,7 +19,7 @@
 .wrapper-logo {
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     align-items: center;
   }
@@ -39,9 +39,12 @@
 }
 .address {
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .address-list {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,8 +80,7 @@
 }
 .social__title {
   @media screen and (max-width: 1199px) {
-    margin: 0 auto;
-    margin-bottom: 20px;
+    text-align: center;
   }
   margin-bottom: 20px;
 }

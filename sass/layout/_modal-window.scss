@@ -54,11 +54,14 @@
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: unset;
   cursor: pointer;
+}
+.close-button__icon {
   transition: fill $main-duration $timing-function;
 }
-.close-button:hover .close-icon,
-.close-button:focus .close-icon {
+.close-button:hover .close-button__icon,
+.close-button:focus .close-button__icon {
   fill: $accent-color;
 }
 .modal-text {
@@ -133,6 +136,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  transition: border $main-duration $timing-function;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 .modal-form__coment::placeholder {
   font-weight: 400;
