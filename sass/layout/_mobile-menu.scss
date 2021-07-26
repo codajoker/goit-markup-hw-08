@@ -127,4 +127,7 @@
   letter-spacing: 0.02em;
 
   color: $accent-color;
+  @media screen and (max-width: 340px) {
+    font-size: 22px;
+  }
 }

@@ -1527,4 +1527,10 @@ img {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+
+@media screen and (max-width: 340px) {
+  .mobile-social__link {
+    font-size: 22px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
